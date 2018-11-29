@@ -6,11 +6,14 @@
     <title>Places To Visit In Georgia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Kumar+One+Outline" rel="stylesheet">
+    <link href="./reset.css" rel="stylesheet">
     <style>
         /*
             # targets an id
             . targets a class
         */
+
+        /*FONTS*/
         #top-section h1{
             font-size:36pt;
             font-family:'Kumar One Outline';}
@@ -18,12 +21,25 @@
             font-size:16pt;
             font-family: 'Bitter';}
         #mid-section, #btm-section{font-family: 'Bitter';}
-        
+
+        /*LAYOUT*/
         #top-section {
             text-align:center;
-            border:2px solid blue;}
-        #mid-section {border:2px solid red;}
-        #btm-section {border:2px solid green;}
+            padding: 30px 0;
+            background-color:rgb(245, 241, 222);}
+        #mid-section {
+            text-align:center;}
+        #btm-section {
+            text-align:center;
+            border:2px solid green;}
+        #btm-section img{
+            width:50%;
+        }
+
+        /*IMAGES*/
+        .thumb{
+            width: 15%; /*Try to aim for using percentages for measurements where you can.*/
+        }
     </style>
 </head>
 <body>
@@ -32,11 +48,15 @@
             <h1>A Humble Photo Gallery</h1>
             <h4>Made with CSS, HTML, & JavaScript.</h4>
         </div>
-        <div id="mid-section">
-            <h2>Middle Section</h2>
+        <div id="mid-section"> <!--An id is unique on page-->
+            <img class="thumb" src="./arabia_mnt.jpg" onclick="bigImage.src = this.src;"/> <!--A class is not unique but groups things together-->
+            <img class="thumb" src="./callaway_gardens.jpg" onclick="bigImage.src = this.src;"/>
+            <img class="thumb" src="./Etowah_Indian_Mounds.jpg" onclick="bigImage.src = this.src;"/>
+            <img class="thumb" src="./prov_state_canyon.jpg" onclick="bigImage.src = this.src;"/>
+            <img class="thumb" src="./wormsloe.jpg" onclick="bigImage.src = this.src;"/>
         </div>
         <div id="btm-section">
-            <h2>Bottom Section</h2>
+            <img src="./prov_state_canyon.jpg" name="bigImage"/>
         </div>
     </div>
 </body>
