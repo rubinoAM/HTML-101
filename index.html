@@ -2,6 +2,9 @@
 NOTES:
 First website ever: info.cern.ch
 
+Command + Right Arrow: Skips you to the end of a line in VSC
+Command + Left Arrow: Skips you to the beginning of a line in VSC
+
 HTML tags start with a '<'
 Opening Tag:
     <tag>
@@ -46,9 +49,20 @@ Comments- Green
 
     <p>A p tag is a paragraph tag and is structural as well.</p>
 
+    Unordered List:
+    <ul> <!--Unordered List-->
+        <li>List item</li> <!--List item-->
+        <li>List item</li> 
+    </ul>
+    Ordered List:
+    <ol> <!--Ordered List-->
+        <li>List item</li> <!--List item-->
+        <li>List item</li> 
+    </ol>
+
     <!--Aesthetic Tags (According to Rob)
         They change the way the content looks
-        Typically you don't want to use these since HTML is for marking up content where CSS is for marking up visual designs for said content
+        Typically you don't want to use these since HTML is for marking up content where CSS is for marking up the aesthetics for said content
         The deprecated ones tend to appear red in Visual Studio by the by-->
     <strong>I am a strong tag! I replaced the "b" tag.</strong> <!--Makes text bold-->      <!--NOTE: These two lines are inline elements, as opposed to being block elements like the others-->
     <em>I am an emphasize tag! I replaced the "i" tag.</em> <!--Italicizes text-->          <!--      Just keep that in mind for the future ;U -->
@@ -61,6 +75,8 @@ Comments- Green
     </div>
 
     <strike>I'm crossed out.</strike>
+    <hr> <!--This tag creates a horizontal line-->
+    <br /><!--This tag creates a line break-->
 
     <!--Semantic Tags
         They tell you what content is supposed to be inside of it-->
@@ -74,5 +90,24 @@ Comments- Green
     <h4>This is an H4 tag!</h4>
     <h5>This is an H5 tag!</h5>
     <h6>This is an H6 tag!</h6>
+
+    <!--Anchor Tags
+        An anchor tag takes you elsewhere-->
+    <a href="https://google.com" comment="The href attribute defines the url the anchor tag takes you.">The text inside an anchor tag gets rendered in the browser naturally.</a>
+    <a href="mail:info@wegotussomemedicalwaste.com" comment="You can use href to compose an email in your computer's default mail client.">Email</a>
+    <a href="tel:18008675309" comment="You can also use href to call a number using your phone (or Skype if on a desktop)">Call Jenny</a>
+
+    <!--Image Tags-->
+    <img src="https://static.spin.com/files/140421-facepaint-album-covers-640x426.jpg" alt="Google reads this attribute and indexes the image in its system under the attribute" comment="You pass a url for a image in the src attribute"/>
+
+    <!--Form Tags-->
+    <form>
+        <input type="text" placeholder="Placeholder Attribute"/>
+        <input type="number" placeholder="Numbers Only"/>
+        <input type="date"/>
+        <input type="password"/>
+        <input type="email"/>
+        <input type="submit" value="SUBMIT" />
+    </form>
 </body>
 </html>
