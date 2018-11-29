@@ -1,27 +1,32 @@
 <!--
 NOTES:
-First website: info.cern.ch
+First website ever: info.cern.ch
 
 HTML tags start with a '<'
 Opening Tag:
     <tag>
 Closing Tag:
     </tag>
-Every between these two tags belong to that tag according to HTML
+Everything between these two tags belongs to that tag according to HTML
+Things directly inside a tag are called attributes (e.g. name in <meta name="">)
 -->
 
 <!DOCTYPE html> <!--Tells the browser what this thing is-->
-<html> <!--Overall tag that starts the html file. EVERYTHING needs to be inside this tag.-->
+<html> <!--Overall tag that starts the html file. EVERYTHING needs to be inside this tag-->
 <head> <!--Where stuff that the user shouldn't see is put
-           E.g. Style tags, JS files, meta tags, page title, fabicon, etc.-->
-    <meta charset="utf-8" />
+           E.g. Style tags, JS files, meta tags, page title, fabicon, etc.
+        
+    Meta tags give info about your page to someone-->
+    <meta charset="utf-8" /> <!--This defines the character set the browser should render the site using (in this case, it'll render in English)-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Class Notes</title>
+    <meta name="description" content="These are the notes I have taken for the lecture on November 29th, 2018."> <!--This information is accessed by others outside of the page (e.g. Google Search)-->
+    <title>Class Notes</title> <!--The title of the page that is rendered on a tab at the top of a browser
+                                   Search engines will list your page using this title-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> <!--Links to a CSS file-->
+    <script src="main.js"></script> <!--Links to a JavaScript-->
 </head>
 <body> <!--Where the stuff the user should see is put-->
-    
+    This is the body!
 </body>
 </html>
