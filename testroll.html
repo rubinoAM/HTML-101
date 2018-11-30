@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="crawler.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="photo-roll-container">
+        <img src="http://placehold.it/01" />
+        <img src="http://placehold.it/02" />
+        <img src="http://placehold.it/03" />
+        <img src="http://placehold.it/04" />
+        <img src="http://placehold.it/05" />
+        <img src="http://placehold.it/06" />
+        <img src="http://placehold.it/07" />
+        <img src="http://placehold.it/08" />
+        <img src="http://placehold.it/09" />
+        <img src="http://placehold.it/10" />
+    </div>
+
+    <script>
+        marqueeInit({
+            uniqueid:'photo-roll-container',
+            style:{
+                'padding':'2px',
+                'width':'600px',
+                'height':'180px'
+            },
+            inc: 5,
+            mouse: 'cursor driven',
+            moveatleast: 2,
+            neutral: 150,
+            savedirection: true,
+            random: true
+        });
+    </script>
+</body>
+</html>

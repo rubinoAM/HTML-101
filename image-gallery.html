@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Places To Visit In Georgia</title>
+    <title>Look At These Dogs!!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Kumar+One+Outline" rel="stylesheet">
     <link href="./reset.css" rel="stylesheet">
@@ -23,40 +23,99 @@
         #mid-section, #btm-section{font-family: 'Bitter';}
 
         /*LAYOUT*/
+        body{
+            background-color:peachpuff;}
         #top-section {
             text-align:center;
             padding: 30px 0;
             background-color:rgb(245, 241, 222);}
         #mid-section {
-            text-align:center;}
+            width:100%;
+            overflow: hidden;
+            margin:0 auto;}
         #btm-section {
             text-align:center;
-            border:2px solid green;}
-        #btm-section img{
-            width:50%;
-        }
+            background-color:rgb(223, 210, 190);
+            overflow: hidden;}
 
         /*IMAGES*/
-        .thumb{
-            width: 15%; /*Try to aim for using percentages for measurements where you can.*/
+        #mid-section .mid-section-block{
+            width:8.096496%;
+            height:88px;
+            position:relative;
+            overflow:hidden;
+            display:inline-block;}
+        #mid-section .mid-section-block img{
+            position:absolute;
+            left:50%;
+            top:50%;
+            height:100%;
+            width: auto; /*Try to aim for using percentages for measurements where you can.*/
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
         }
+        #mid-section .mid-section-block img.thumb{
+            width:100%;
+            height:auto;}
+        #btm-section #btm-section-block{
+            height:500px;
+            position:relative;
+            overflow:hidden;
+        }
+        #btm-section #btm-section-block img{
+            width:100%;
+            height:auto;}
     </style>
 </head>
 <body>
     <div id="gallery-wrapper">  <!--A wrapper for the entire gallery. The div just helps us organize our content.-->
         <div id="top-section">
-            <h1>A Humble Photo Gallery</h1>
+            <h1>Look At These Cool Ass Dogs</h1>
             <h4>Made with CSS, HTML, & JavaScript.</h4>
         </div>
-        <div id="mid-section"> <!--An id is unique on page-->
-            <img class="thumb" src="./arabia_mnt.jpg" onclick="bigImage.src = this.src;"/> <!--A class is not unique but groups things together-->
-            <img class="thumb" src="./callaway_gardens.jpg" onclick="bigImage.src = this.src;"/>
-            <img class="thumb" src="./Etowah_Indian_Mounds.jpg" onclick="bigImage.src = this.src;"/>
-            <img class="thumb" src="./prov_state_canyon.jpg" onclick="bigImage.src = this.src;"/>
-            <img class="thumb" src="./wormsloe.jpg" onclick="bigImage.src = this.src;"/>
-        </div>
         <div id="btm-section">
-            <img src="./prov_state_canyon.jpg" name="bigImage"/>
+            <a class="btm-section-block">
+                <img src="./images/lab_large.jpg" name="bigImage"/>
+            </a>
+        </div>
+        <div id="mid-section"> <!--An id is unique on page-->
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/lab_thumb.jpg" onclick="bigImage.src = './images/lab_large.jpg'" /> <!--A class is not unique but groups things together-->
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/stb_thumb.jpg" onclick="bigImage.src = './images/stb_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/mas_thumb.jpg" onclick="bigImage.src = './images/mas_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/spo_thumb.jpg" onclick="bigImage.src = './images/spo_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/flu_thumb.jpg" onclick="bigImage.src = './images/flu_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/cas_thumb.jpg" onclick="bigImage.src = './images/cas_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/tar_thumb.jpg" onclick="bigImage.src = './images/tar_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/rot_thumb.jpg" onclick="bigImage.src = './images/rot_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/gia_thumb.jpg" onclick="bigImage.src = './images/gia_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/chi_thumb.jpg" onclick="bigImage.src = './images/chi_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/flo_thumb.jpg" onclick="bigImage.src = './images/flo_large.jpg'"/>
+            </a>
+            <a class="mid-section-block">
+                <img class="thumb" src="./images/oce_thumb.jpg" onclick="bigImage.src = './images/oce_large.jpg'"/>
+            </a>
         </div>
     </div>
 </body>
